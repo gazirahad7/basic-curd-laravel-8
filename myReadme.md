@@ -1,4 +1,4 @@
-# =============================
+### =============================
 
 1. How to create new project in Laravel?
 
@@ -6,13 +6,13 @@
     2. Then created laravel project
     3. run project // php artisan serve
 
-# =============================
+### =============================
 
 2. Set database in .env file
     1. DB_DATABASE= // your database name
     2. APP_NAME=
 
-# =============================
+### =============================
 
 3. Goto Providers folder to AppServiceProvider.php file and set
 
@@ -24,12 +24,12 @@
 
     And, import Schema class
 
-# =============================
+### =============================
 
 4. Goto RouteServiceProvider.php file uncomment
    protected $namespace = 'App\Http\Controllers';
 
-# =============================
+### =============================
 
 5. How create route and access the view page ?
    simple create your route url and return
@@ -39,7 +39,7 @@
        return 'About us';
        });
 
-# =============================
+### =============================
 
 6. How to crate new controller command below:
 
@@ -59,7 +59,7 @@ And created page folder in views, then create about page in this folder name is 
     Route::get('/', 'PagesController@index');
     Route::get('/about', 'PagesController@about');
 
-# =============================
+### =============================
 
 7. create table in migration?
 
@@ -69,25 +69,24 @@ then assign attribute in this table
 and
 php artisan migrate
 
-# =============================
+### =============================
 
 8. How to create Model
    php artisan make:model Employee
 
-# =============================
+### =============================
 
 9. How to create migration table and model together like shortcut way ?
 
 php artisan make:model Demo -m // Demo as ar table name
-
-========================== 10. An problem
+### ========================== 10. An problem
 Laravel not assign default Model folder , so
 i create an Models folder and store all models file in this file
 
 namespace App\Models;
 use App\Models\Employee;
 
-================================
+### ================================
 
 11. How to fetch Data From database ?
 
@@ -102,7 +101,7 @@ use App\Models\Employee;
     }
     IN postController
 
-# =============================
+### =============================
 
 12. How to insert data in database?
     needed
@@ -133,7 +132,7 @@ use App\Models\Employee;
             return redirect('employee')->with('success', 'Employee added successfully');
             }
 
-# =============================
+### =============================
 
 13. How to update data ?
 
@@ -169,11 +168,11 @@ use App\Models\Employee;
             }
             //
 
-# =============================
+### =============================
 
 14. Delete Data form database
 
-# =============================
+### =============================
 
 15. User Authentication System
     Below this commend run on terminal
@@ -197,7 +196,7 @@ use App\Models\Employee;
 
     Route::get('/home', 'HomeController@index');
 
-# =============================
+### =============================
 
 16. Custom Registration from?
 
@@ -208,7 +207,7 @@ use App\Models\Employee;
     3. Then goto Register controller validator add your new data
     4. Then modify local mysql database
 
-# =============================
+### =============================
 
 17. How to login email or phone number
 
@@ -228,7 +227,7 @@ use App\Models\Employee;
 
         And set your condition
 
-# =============================
+### =============================
 
 18. CURD using Resource controller in Laravel 8
 
@@ -299,7 +298,7 @@ use App\Models\Employee;
 
         CURD operation can follow route list in terminal
 
-# =============================
+### =============================
 
 19. How to make middleware in Laravel 8
 
@@ -349,7 +348,7 @@ use App\Models\Employee;
 
             }
 
-# =============================
+### =============================
 
 20. How to file upload or image upload
 
@@ -405,7 +404,7 @@ use App\Models\Employee;
                     File::delete($destinationPath);
         }
 
-# =============================
+### =============================
 
 21. How use from validation ?
 
