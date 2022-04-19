@@ -79,7 +79,8 @@ php artisan migrate
 9. How to create migration table and model together like shortcut way ?
 
 php artisan make:model Demo -m // Demo as ar table name
-### ========================== 10. An problem
+### ========================== 
+10. An problem
 Laravel not assign default Model folder , so
 i create an Models folder and store all models file in this file
 
